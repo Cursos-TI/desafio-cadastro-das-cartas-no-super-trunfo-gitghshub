@@ -94,6 +94,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: R$ %.2f\n", pibPerCapita2);
+    printf("Novo commit\n");
 
     return 0;
 }
