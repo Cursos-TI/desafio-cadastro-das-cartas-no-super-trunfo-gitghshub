@@ -2,20 +2,27 @@
 #include <string.h>
 
 int main() {
-    
-    int codigo1, populacao1, pontosTuristicos1;
-    float area1, pib1;
+    // -------- Cidade 1 --------
+    char estado1;
+    char codigoCarta1[10];
     char nome1[50];
+    int populacao1, pontosTuristicos1;
+    float area1, pib1, densidade1, pibPerCapita1;
 
-    
-    int codigo2, populacao2, pontosTuristicos2;
-    float area2, pib2;
+    // -------- Cidade 2 --------
+    char estado2;
+    char codigoCarta2[10];
     char nome2[50];
+    int populacao2, pontosTuristicos2;
+    float area2, pib2, densidade2, pibPerCapita2;
 
-   
-    printf("Digite o código da cidade 1: ");
-    scanf("%d", &codigo1);
-    while (getchar() != '\n'); 
+    // ===== Entrada de dados da Cidade 1 =====
+    printf("Digite o estado da cidade 1 (letra): ");
+    scanf(" %c", &estado1);
+
+    printf("Digite o código da carta da cidade 1: ");
+    scanf("%s", codigoCarta1);
+    while (getchar() != '\n');
 
     printf("Digite o nome da cidade 1: ");
     fgets(nome1, sizeof(nome1), stdin);
@@ -32,11 +39,17 @@ int main() {
 
     printf("Digite o número de pontos turísticos da cidade 1: ");
     scanf("%d", &pontosTuristicos1);
-    while (getchar() != '\n'); // limpa de novo
 
+    // Cálculos Cidade 1
+    densidade1 = populacao1 / area1;
+    pibPerCapita1 = pib1 / populacao1;
 
-    printf("\nDigite o código da cidade 2: ");
-    scanf("%d", &codigo2);
+    // ===== Entrada de dados da Cidade 2 =====
+    printf("\nDigite o estado da cidade 2 (letra): ");
+    scanf(" %c", &estado2);
+
+    printf("Digite o código da carta da cidade 2: ");
+    scanf("%s", codigoCarta2);
     while (getchar() != '\n');
 
     printf("Digite o nome da cidade 2: ");
@@ -55,24 +68,32 @@ int main() {
     printf("Digite o número de pontos turísticos da cidade 2: ");
     scanf("%d", &pontosTuristicos2);
 
-    
-    printf("\n--- Dados da Cidade 1 ---\n");
-    printf("Código: %d\n", codigo1);
-    printf("Nome: %s\n", nome1);
+    // Cálculos Cidade 2
+    densidade2 = populacao2 / area2;
+    pibPerCapita2 = pib2 / populacao2;
+
+    // ===== Saída =====
+    printf("\n--- Carta 1 ---\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código da Carta: %s\n", codigoCarta1);
+    printf("Nome da Cidade: %s\n", nome1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: R$ %.2f\n", pib1);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: R$ %.2f\n", pibPerCapita1);
 
-    printf("\n--- Dados da Cidade 2 ---\n");
-    printf("Código: %d\n", codigo2);
-    printf("Nome: %s\n", nome2);
+    printf("\n--- Carta 2 ---\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código da Carta: %s\n", codigoCarta2);
+    printf("Nome da Cidade: %s\n", nome2);
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f\n", pib2);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos2);
-    printf("novo commit\n"),
-    
-    
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: R$ %.2f\n", pibPerCapita2);
+
     return 0;
 }
