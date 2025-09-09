@@ -114,7 +114,7 @@ int main() {
     printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2);
     printf("PIB per Capita: Carta 1 venceu (%d)\n", pibPerCapita1 > pibPerCapita2);
     printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2);
-
+    printf("Novo commit\n");
     return 0;
 }
 
