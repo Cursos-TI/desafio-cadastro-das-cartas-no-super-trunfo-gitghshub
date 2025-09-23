@@ -163,7 +163,7 @@ int main() {
         printf("Super Poder: Carta 2 venceu! (%.2f > %.2f)\n", superPoder2, superPoder1);
     else
         printf("Super Poder: Empate! (%.2f = %.2f)\n", superPoder1, superPoder2);
-
+printf("Novo commit\n");
     return 0;
 }
 
