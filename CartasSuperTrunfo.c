@@ -178,7 +178,7 @@ int main() {
             break;
     }
 
-    printf("\nNovo commit\n");
+    printf("Novo commit\n");
     return 0;
 }
 
