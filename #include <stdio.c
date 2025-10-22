@@ -23,6 +23,7 @@ int main () {
     {   
     printf("%d - Diagonal-Direita\n", i);
     }
+    printf("Novo Commit\n");
 
 return 0;
 }
