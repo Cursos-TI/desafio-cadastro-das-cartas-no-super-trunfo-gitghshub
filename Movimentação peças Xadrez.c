@@ -45,12 +45,7 @@ return 0;
 
     }
     
-      
-
-
-
-
-   printf("Novo commit\n");
+    printf("Novo commit\n");
     return 0;
 }
 >>>>>>> 4c9b962 (criei o printf):#include <stdio.c
