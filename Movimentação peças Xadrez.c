@@ -23,7 +23,34 @@ int main () {
     {   
     printf("%d - Diagonal-Direita\n", i);
     }
-    printf("Novo Commit\n");
+    printf("============================\n");
+    printf("***Cavalo move-se***\n");
 
+<<<<<<< HEAD:Movimentação peças Xadrez.c
 return 0;
 }
+=======
+    int MovimentoCavalo = 1;
+
+    while (MovimentoCavalo <= 1)
+    {
+        for ( int k = 0; k <= 2; k++)
+      {
+        printf("Baixo\n");
+
+       }
+
+      printf("Esquerda!\n");
+      MovimentoCavalo++;
+
+    }
+    
+      
+
+
+
+
+   
+    return 0;
+}
+>>>>>>> 4c9b962 (criei o printf):#include <stdio.c
